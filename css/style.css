@@ -14,7 +14,8 @@
 }
 
 .box {
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
     padding: 25px;
     border-radius: 25px;
     background: #e0e5ec;
@@ -154,5 +155,14 @@ li:active {
     .fab {
         top: 100px;
         right: 10px;
+    }
+    .box{
+        max-width:320px;
+    }
+    .input-box input{
+        width: 90%;
+    }
+    html,body{
+        overflow-x: hidden !important;
     }
 }
