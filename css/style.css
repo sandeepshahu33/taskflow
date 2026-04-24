@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-color {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e5ec !important;
+}
+
+.box {
+    width: 360px;
+    padding: 25px;
+    border-radius: 25px;
+    background: #e0e5ec;
+    box-shadow: 10px 10px 25px #a3b1c6,
+        -10px -10px 25px #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    background: #e0e5ec;
+    box-shadow: inset 5px 5px 10px #a3b1c6,
+        inset -5px -5px 10px #ffffff;
+}
+
+.input-box button {
+    border: none;
+    padding: 12px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #e0e5ec;
+    box-shadow: 5px 5px 10px #a3b1c6,
+        -5px -5px 10px #ffffff;
+    transition: 0.2s;
+}
+
+.input-box button:active {
+    box-shadow: inset 5px 5px 10px #a3b1c6,
+        inset -5px -5px 10px #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+/* #tasks {
+     list-style: none;
+     height: 45vh;
+     padding: 0;
+     overflow-y: scroll;
+ } */
+
+li {
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e5ec;
+    box-shadow: 5px 5px 10px #a3b1c6,
+        -5px -5px 10px #ffffff;
+    transition: 0.3s;
+
+}
+
+li:active {
+    transform: scale(0.98);
+}
+
+/* text */
+.task-text.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* buttons */
+.actions button {
+    border: none;
+    background: #e0e5ec;
+    margin-left: 8px;
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #a3b1c6,
+        -3px -3px 6px #ffffff;
+}
+
+.actions button:active {
+    box-shadow: inset 3px 3px 6px #a3b1c6,
+        inset -3px -3px 6px #ffffff;
+}
+
+.check {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #6c63ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
