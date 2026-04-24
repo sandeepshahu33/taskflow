@@ -30,7 +30,6 @@
                         <button onclick="add()">Add</button>
                     </div>
                     <p class="text-white mb-0">Your recent task here...</p>
-                    <!-- <button onclick="blast()">❤️ Like</button> -->
                     <ul id="tasks" class="mt-3">
 
                     </ul>
@@ -44,32 +43,6 @@
     <script src="js/main.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script>
-        function blast() {
-            let duration = 1500;
-            let end = Date.now() + duration;
-
-            (function frame() {
-                confetti({
-                    particleCount: 6,
-                    angle: 60,
-                    spread: 80,
-                    origin: { x: 0 }
-                });
-
-                confetti({
-                    particleCount: 6,
-                    angle: 120,
-                    spread: 80,
-                    origin: { x: 1 }
-                });
-
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
-            })();
-        }
-    </script>
 </body>
 
 </html>

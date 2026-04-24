@@ -145,3 +145,14 @@ li:active {
 .fab:hover {
     transform: scale(1.1);
 }
+
+@media (max-width : 500px) {
+    .input-box {
+        width: 100%;
+    }
+
+    .fab {
+        top: 100px;
+        right: 10px;
+    }
+}

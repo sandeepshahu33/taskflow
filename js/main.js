@@ -60,5 +60,31 @@ function toggleTask(btn) {
     task.classList.toggle("done");
 }
 function focusInput() {
-            document.getElementById("text").focus();
+    document.getElementById("text").focus();
+}
+
+
+function blast() {
+    let duration = 1500;
+    let end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 6,
+            angle: 60,
+            spread: 80,
+            origin: { x: 0 }
+        });
+
+        confetti({
+            particleCount: 6,
+            angle: 120,
+            spread: 80,
+            origin: { x: 1 }
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
         }
+    })();
+}
