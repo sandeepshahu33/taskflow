@@ -15,7 +15,7 @@
 
 .box {
     /* width: 360px; */
-    width: 100%;
+    width: 500px;
     padding: 25px;
     border-radius: 25px;
     background: #e0e5ec;
@@ -157,7 +157,7 @@ li:active {
         right: 10px;
     }
     .box{
-        max-width:320px;
+        max-width:350px;
     }
     .input-box input{
         width: 90%;
